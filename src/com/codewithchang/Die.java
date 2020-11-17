@@ -3,12 +3,15 @@ package com.codewithchang;
 import java.util.Random;
 
 public class Die {
-    private int numberOfSide = 6;
-    private int dieValue;
+    private int sides;
+    private int value;
 
-    public Die() { this.dieValue = 1; }
+    public Die() {
+        sides = 6;
+        value = 1;
+    }
 
-    public void roll(Random random) { dieValue = random.nextInt(numberOfSide) + 1; }
+    public void roll(Random rand) { value = rand.nextInt(sides) + 1; }
 
-    public int getDieValue() { return dieValue; }
+    public int getValue() { return value; }
 }
