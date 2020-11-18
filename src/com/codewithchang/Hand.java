@@ -19,6 +19,14 @@ public class Hand {
         }
     }
 
+    public void roll(Random rand, int choice) {
+        dice.get(choice).roll(rand);
+    }
+
+    public void roll(Random rand, List<Integer> choices) {
+        for (int choice : choices) { roll(rand, choice); } // reusing the roll method
+    }
+
     @Override
     public String toString() {
         String output = "";
@@ -27,14 +35,4 @@ public class Hand {
         }
         return output.trim();
     }
-
-//    public void roll(Random rand, int dieChoice) { dice.get(dieChoice).roll(rand); }
-//
-//    public void roll(Random random, List<Integer> dieChoices) {
-//        for (int choice : dieChoices) {
-//            roll(random, choice);
-//        }
-//    }
-//
-//    public List<Die> getDice() { return dice; }
 }
