@@ -1,5 +1,7 @@
 package com.codewithchang;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Console {
@@ -10,10 +12,21 @@ public class Console {
     }
 
     static public int getChoice() {
-        System.out.print("Pick a die 1-5 to re-roll: ");
+        System.out.print("Choose die 1-5 to re-roll: ");
         int choice = scanner.nextInt();
         return choice -1;
     }
 
-    // static public ArrayList<Integer> getChoices()
+     static public List<Integer> getChoices() {
+        List<Integer> choices = new ArrayList<>();
+        // TODO: get the choices
+         System.out.println("Which dice do you want to re-roll?");
+         String input = scanner.nextLine(); // "2 4 5"
+         String[] inputArray = input.split(" "); // ["2", "4", "5"] -> <2, 4, 5>
+         for (String number : inputArray) {
+             choices.add(Integer.parseInt(number) -1);
+         }
+
+        return choices;
+     }
 }
