@@ -16,21 +16,22 @@ public class RollHand {
         }
     }
 
-    //roll all dice
+    //roll all dice with random values
     public void roll(Random rand) {
         for (Die die : dice) {
             die.roll(rand);
         }
     }
 
-    //roll a specific die
+    //re-roll a specific die
     public void roll(Random rand, int dieChoice) { dice.get(dieChoice).roll(rand); }
 
-    public void roll(Random random, List<Integer> dieChoices) {
+    public void roll(Random rand, List<Integer> dieChoices) {
         for (int choice : dieChoices) {
-            roll(random, choice);
+            roll(rand, choice);
         }
     }
 
+    //getter for YahtzeeConsole
     public List<Die> getDice() { return dice; }
 }

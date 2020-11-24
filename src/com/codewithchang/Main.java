@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Random rand = new Random();
 <<<<<<< HEAD
+<<<<<<< HEAD
         Hand myHand = new Hand(5);
 
         Console.welcome();
@@ -18,6 +19,17 @@ public class Main {
         System.out.println(myHand);
 =======
         Console.welcome();
+>>>>>>> 02-roll-hand
+=======
+        YahtzeeConsole.welcome();
+        RollHand myHand = new RollHand();
+        myHand.roll(rand);
+        YahtzeeConsole.displayHand(myHand.getDice());
+        myHand.roll(rand, YahtzeeConsole.getChoice());
+        myHand.roll(rand, YahtzeeConsole.getChoice());
+        YahtzeeConsole.displayHand(myHand.getDice());
+        myHand.roll(rand, YahtzeeConsole.getChoice());
+        YahtzeeConsole.displayHand(myHand.getDice());
 >>>>>>> 02-roll-hand
     }
 }
