@@ -6,6 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        Console.welcome();
+        YahtzeeConsole.welcome();
+        RollHand myHand = new RollHand();
+        myHand.roll(rand);
+        YahtzeeConsole.displayHand(myHand.getDice());
+        myHand.roll(rand, YahtzeeConsole.getChoice());
+        myHand.roll(rand, YahtzeeConsole.getChoice());
+        YahtzeeConsole.displayHand(myHand.getDice());
+        myHand.roll(rand, YahtzeeConsole.getChoice());
+        YahtzeeConsole.displayHand(myHand.getDice());
     }
 }
