@@ -1,13 +1,17 @@
 package com.codewithchang;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
+=======
+>>>>>>> 02-roll-hand
 import java.util.Scanner;
 
 public class Console {
     static Scanner scanner = new Scanner(System.in);
 
     static public void welcome() {
+<<<<<<< HEAD
         System.out.println("Welcome to Yahtzee");
     }
 
@@ -29,4 +33,12 @@ public class Console {
 
         return choices;
      }
+=======
+        System.out.println("Welcome to Yahtzee!");
+    }
+
+    static public void log(String output) {
+        System.out.println();
+    }
+>>>>>>> 02-roll-hand
 }
