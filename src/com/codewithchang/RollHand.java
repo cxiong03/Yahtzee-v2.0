@@ -26,6 +26,7 @@ public class RollHand {
     //re-roll a specific die
     public void roll(Random rand, int dieChoice) { dice.get(dieChoice).roll(rand); }
 
+    //Overload
     public void roll(Random rand, List<Integer> dieChoices) {
         for (int choice : dieChoices) {
             roll(rand, choice);

@@ -25,10 +25,9 @@ public class Main {
         RollHand myHand = new RollHand();
         myHand.roll(rand);
         YahtzeeConsole.displayHand(myHand.getDice());
-        myHand.roll(rand, YahtzeeConsole.getChoice());
-        myHand.roll(rand, YahtzeeConsole.getChoice());
+        myHand.roll(rand, YahtzeeConsole.getChoices());
         YahtzeeConsole.displayHand(myHand.getDice());
-        myHand.roll(rand, YahtzeeConsole.getChoice());
+        myHand.roll(rand, YahtzeeConsole.getChoices());
         YahtzeeConsole.displayHand(myHand.getDice());
 >>>>>>> 02-roll-hand
     }
