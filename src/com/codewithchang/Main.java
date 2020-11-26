@@ -14,5 +14,7 @@ public class Main {
         YahtzeeConsole.displayHand(myHand.getDice());
         myHand.roll(rand, YahtzeeConsole.getChoices());
         YahtzeeConsole.displayHand(myHand.getDice());
+        myHand.roll(rand, YahtzeeConsole.getChoices());
+        YahtzeeConsole.displayHand(myHand.getDice());
     }
 }
