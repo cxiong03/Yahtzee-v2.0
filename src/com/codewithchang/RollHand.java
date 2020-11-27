@@ -34,5 +34,11 @@ public class RollHand {
     }
 
     //getter for YahtzeeConsole
-    public List<Die> getDice() { return dice; }
+    public List<Integer> getDice() {
+        List<Integer> values = new ArrayList<>();
+        for (var die : dice) {
+            values.add(die.getDieValue());
+        }
+        return values;
+    }
 }

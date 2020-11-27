@@ -10,10 +10,10 @@ public class YahtzeeConsole extends Console{
     }
 
     //display hand from Die class
-    static  public void displayHand(List<Die> dice) {
+    static  public void displayHand(List<Integer> dice) {
         System.out.println("---------");
-        for(Die die : dice) {
-            System.out.print(die.getDieValue() + " ");
+        for(var die : dice) {
+            System.out.print(die + " ");
         }
         System.out.print("\n---------\n");
     }
